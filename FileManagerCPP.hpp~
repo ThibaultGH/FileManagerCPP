@@ -1,0 +1,6 @@
+#ifndef FILEMANAGERCPP_H
+#define FILEMANAGERCPP_H
+
+vector<string> split(const string str);
+
+#endif
