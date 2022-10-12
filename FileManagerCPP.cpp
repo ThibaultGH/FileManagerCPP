@@ -13,7 +13,7 @@ vector<string> split(const string str, const char separator){
 
   for (int i0 = 0; i0 < str_size; ++i0) {
     
-    if (str[i0] == separator) {
+    if (str[i0] == separator and i0 != 0) {
       out.push_back(tmp_str);
       tmp_str.clear();
     }
