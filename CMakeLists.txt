@@ -4,6 +4,6 @@ project(FileManagerC++)
 
 add_library(FileManagerCPP FileManagerCPP.cpp)
 
-add_executable(${PROJECT_NAME} main.cpp)
+# add_executable(${PROJECT_NAME} main.cpp)
 
-target_link_libraries(${PROJECT_NAME} FileManagerCPP)
+# target_link_libraries(${PROJECT_NAME} FileManagerCPP)
