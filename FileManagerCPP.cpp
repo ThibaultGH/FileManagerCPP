@@ -10,10 +10,18 @@ vector<string> split(const string str, const char separator){
   string tmp_str;
   char tmp_char;
   vector<string> out;
+  int start;
 
-  for (int i0 = 0; i0 < str_size; ++i0) {
+  if (str[0] == separator) {
+    start = 1;
+  }
+  else {
+    start = 0;
+  }
+  
+  for (int i0 = start; i0 < str_size; ++i0) {
     
-    if (str[i0] == separator and i0 != 0) {
+    if (str[i0] == separator) {
       out.push_back(tmp_str);
       tmp_str.clear();
     }
